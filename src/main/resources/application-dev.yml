@@ -1,0 +1,7 @@
+server:
+  port: 80
+
+mail:
+  activation-url: localhost/yellow-car-bff/users/verify?token=
+jobs:
+  delete-tokens-cron: "0 */1 * ? * *"
