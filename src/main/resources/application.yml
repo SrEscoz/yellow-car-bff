@@ -1,7 +1,4 @@
 # Configuración general
-server:
-  servlet.context-path: /yellow-car-bff
-
 spring:
   profiles:
     active: pi
