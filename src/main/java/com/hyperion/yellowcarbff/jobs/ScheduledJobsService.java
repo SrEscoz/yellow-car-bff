@@ -28,7 +28,7 @@ public class ScheduledJobsService {
     @Autowired
     private UsersRepository usersRepository;
 
-    private final String deleteTokensCron = "0 */1 * ? * *";
+    private final String deleteTokensCron = "0 0 0 * * *";
 
     @Scheduled(cron = deleteTokensCron) // Se ejecuta el job todos los días a las 12:00
     public void deleteTokens() {
