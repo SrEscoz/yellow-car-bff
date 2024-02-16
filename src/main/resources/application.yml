@@ -5,25 +5,3 @@ server:
 spring:
   profiles:
     active: dev
-
-  # Configuración del email
-  mail:
-    host: smtp-mail.outlook.com
-    port: 587
-    username: customer-hyperion@outlook.com
-    password: amd2600X!
-    properties:
-      mail:
-        smtp.starttls.enable: true
-        smtp.auth: true
-
-  # Configuración de la bb dd
-  datasource:
-    url: jdbc:mariadb://192.168.100.124:3306/YellowCar
-    username: root
-    password: root
-    driver-class-name: org.mariadb.jdbc.Driver
-  jpa:
-    hibernate.ddl-auto: update
-
-

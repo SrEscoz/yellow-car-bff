@@ -1,6 +1,27 @@
 server:
   port: 80
 
+spring:
+  # Configuración del email
+  mail:
+    host: smtp-mail.outlook.com
+    port: 587
+    username:
+    password:
+    properties:
+      mail:
+        smtp.starttls.enable: true
+        smtp.auth: true
+
+  # Configuración de la bb dd
+  datasource:
+    url: jdbc:mariadb://192.168.100.124:3306/YellowCar
+    username:
+    password:
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate.ddl-auto: update
+
 mail:
   activation-url: localhost/yellow-car-bff/users/verify?token=
 jobs:

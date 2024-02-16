@@ -1,7 +1,0 @@
-server:
-  port: 8020
-
-mail:
-  activation-url: 192.168.100.124:8020/yellow-car-bff/users/verify?token=
-jobs:
-  delete-tokens-cron: "0 0 0 * * *"
